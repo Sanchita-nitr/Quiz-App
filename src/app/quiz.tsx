@@ -150,12 +150,9 @@ const Quiz: React.FC = () => {
         setBonusScore(bonus);
 
         const totalScore = score + bonus;
-        const storedHighScore = Number(
-          JSON.parse(localStorage.getItem("highestScore") || "0")
-        );
+        const storedHighScore = 0; // Removed localStorage usage
 
         if (totalScore > storedHighScore) {
-          localStorage.setItem("highestScore", JSON.stringify(totalScore));
           setNewHighScore(true);
         }
       }
@@ -322,10 +319,10 @@ const Quiz: React.FC = () => {
   const progress = ((currentQuestionIndex + 1) / questions.length) * 100;
 
   return (
-    <div className="min-h-screen p-4">
-      <div>
+    <div className="min-h-screen bg-gradient-to-br from-red-50 via-lime-50 to-yellow-50 p-4">
+      <div className="max-w-4xl mx-auto">
         {/* Header */}
-        <div className=" rounded-2xl p-6 mb-6 ">
+        <div className="bg-white rounded-2xl shadow-lg shadow-slate-200 p-6 mb-6 border border-slate-200">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 bg-gradient-to-r from-lime-400 to-amber-400 rounded-xl flex items-center justify-center">
@@ -366,7 +363,7 @@ const Quiz: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg shadow-slate-200 p-6 my-10 border border-slate-200">
+        <div className="bg-white rounded-2xl shadow-lg shadow-slate-200 p-6 mb-6 border border-slate-200">
           <h3 className="text-lg font-semibold text-slate-800 mb-4">
             Question Navigator
           </h3>
@@ -389,9 +386,9 @@ const Quiz: React.FC = () => {
         </div>
 
         {/* Question Card */}
-        <div className="bg-white rounded-2xl overflow-hidden border-t border-slate-200 border-l border-r">
-          <div className="bg-gradient-to-r from-slate-50 to-blue-50 p-6 border-b  border-slate-200">
-            <h2 className="text-xl md:text-2xl font-semibold text-slate-800 leading-relaxed ">
+        <div className="bg-white rounded-2xl shadow-lg shadow-slate-200 overflow-hidden border border-slate-200">
+          <div className="bg-gradient-to-r from-slate-50 to-blue-50 p-6 border-b border-slate-200">
+            <h2 className="text-xl md:text-2xl font-semibold text-slate-800 leading-relaxed">
               {currentQuestion.question}
             </h2>
           </div>
