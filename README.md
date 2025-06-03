@@ -45,12 +45,11 @@ This is a modern Quiz Application built with Next.js, React, and TypeScript, sty
 - `npm run dev` - Runs the app in development mode with hot reloading.
 - `npm run build` - Builds the app for production.
 - `npm run start` - Starts the production server.
-- `npm run lint` - Runs ESLint to check code quality.
 
 ## Technologies Used
 
 - [Next.js](https://nextjs.org/)
-- [React](https://reactjs.org/)
+- [React.js](https://reactjs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [ESLint](https://eslint.org/)
@@ -61,14 +60,10 @@ This is a modern Quiz Application built with Next.js, React, and TypeScript, sty
 - `public/` - Static assets like images and icons.
 - `quiz-app/` - Root project directory with configuration files.
 
-## Contributing
-
-Contributions are welcome! Please open issues or submit pull requests for improvements.
-
 ## License
 
 This project is licensed under the MIT License.
 
 ---
 
-This project is part of my portfolio and demonstrates my skills in modern web development with React, Next.js, and TypeScript. It is suitable for showcasing in CVs and GitHub profiles for job applications.
+This project is part of my portfolio and demonstrates my skills in modern web development with React, Next.js, and TypeScript.
