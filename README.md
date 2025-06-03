@@ -67,3 +67,5 @@ This project is licensed under the MIT License.
 ---
 
 This project is part of my portfolio and demonstrates my skills in modern web development with React, Next.js, and TypeScript.
+
+This project is deployed with [Vercel]([https://vercel.com/](https://quizapp-git-master-sanchita-priyadarshinees-projects.vercel.app/)) for seamless hosting and continuous deployment.
