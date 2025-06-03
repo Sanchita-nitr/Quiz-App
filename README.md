@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Quiz App
 
-## QUIZ APP
+This is a modern Quiz Application built with Next.js, React, and TypeScript, styled with Tailwind CSS. The app provides an interactive quiz experience with multiple pages including start, quiz, and score pages.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Built with Next.js for server-side rendering and optimized performance.
+- Uses React and TypeScript for type-safe, maintainable code.
+- Tailwind CSS for utility-first styling.
+- ESLint configured for code quality and consistency.
+- Multiple pages for quiz flow: start page, quiz page, and score page.
+- Responsive design for desktop and mobile devices.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. Clone the repository:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+   ```bash
+   git clone <repository-url>
+   cd quiz-app
+   ```
 
-## Learn More
+2. Install dependencies:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Scripts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run dev` - Runs the app in development mode with hot reloading.
+- `npm run build` - Builds the app for production.
+- `npm run start` - Starts the production server.
+- `npm run lint` - Runs ESLint to check code quality.
+
+## Technologies Used
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [ESLint](https://eslint.org/)
+
+## Project Structure
+
+- `src/app/` - Contains the main application pages and components.
+- `public/` - Static assets like images and icons.
+- `quiz-app/` - Root project directory with configuration files.
+
+## Contributing
+
+Contributions are welcome! Please open issues or submit pull requests for improvements.
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+This project is part of my portfolio and demonstrates my skills in modern web development with React, Next.js, and TypeScript. It is suitable for showcasing in CVs and GitHub profiles for job applications.
