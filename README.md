@@ -13,20 +13,26 @@ This is a modern Quiz Application built with Next.js, React, and TypeScript, sty
 
 ## Installation
 
-1. Clone the repository:
+1. Create a project folder and navigate into it:
 
    ```bash
-   git clone <repository-url>
+   mkdir quiz-app
    cd quiz-app
    ```
 
-2. Install dependencies:
+2. Initialize a new Next.js project:
+
+   ```bash
+   npx create-next-app@latest .
+   ```
+
+3. Install dependencies:
 
    ```bash
    npm install
    ```
 
-3. Run the development server:
+4. Run the development server:
 
    ```bash
    npm run dev
