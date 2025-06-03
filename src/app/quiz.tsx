@@ -214,13 +214,14 @@ const Quiz: React.FC = () => {
               </div>
             </div>
           </div>
-
-          <button
-            onClick={startQuiz}
-            className="bg-gradient-to-t font-serif from-lime-400 to-yellow-300 hover:from-lime-500 hover:to-yellow-300 text-cyan-900 md:text-2xl sm:text-xl text-lg font-semibold md:py-4 md:px-8 py-3 px-5 rounded-2xl shadow-lg hover:shadow-xl"
-          >
-            Start Quiz Challenge
-          </button>
+          <div className="transition-all duration-300 transform hover:scale-105">
+            <button
+              onClick={startQuiz}
+              className="bg-gradient-to-t font-serif from-lime-400 to-yellow-300 hover:from-lime-500 hover:to-yellow-300 text-cyan-900 md:text-2xl sm:text-xl text-lg font-semibold md:py-4 md:px-8 py-3 px-5 rounded-2xl shadow-lg hover:shadow-xl"
+            >
+              Start Quiz Challenge
+            </button>
+          </div>
         </div>
       </div>
     );
@@ -307,7 +308,7 @@ const Quiz: React.FC = () => {
 
           <button
             onClick={handleRestart}
-            className="bg-gradient-to-r from-slate-600 to-slate-700 hover:from-slate-700 hover:to-slate-800 text-white font-semibold py-4 px-8 rounded-2xl transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl inline-flex items-center gap-2"
+            className=" font-serif bg-gradient-to-t from-lime-400 to-yellow-300 hover:from-lime-500 hover:to-yellow-300 text-cyan-900 md:text-2xl sm:text-xl text-lg font-semibold md:py-4 md:px-8 py-3 px-5 rounded-2xl shadow-lg hover:shadow-xl inline-flex items-center gap-2"
           >
             <RotateCcw className="w-5 h-5" />
             Take Quiz Again
@@ -322,7 +323,7 @@ const Quiz: React.FC = () => {
 
   return (
     <div className="min-h-screen p-4">
-      <div className="">
+      <div>
         {/* Header */}
         <div className=" rounded-2xl p-6 mb-6 ">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
@@ -358,14 +359,14 @@ const Quiz: React.FC = () => {
             </div>
             <div className="w-full bg-slate-200 rounded-full h-2">
               <div
-                className="bg-gradient-to-r from-red-400 via-yellow-400 to-lime-400 h-2 rounded-full transition-all duration-500"
+                className="bg-gradient-to-r from-red-600 via-yellow-400 to-lime-400 h-2 rounded-full transition-all duration-500"
                 style={{ width: `${progress}%` }}
               ></div>
             </div>
           </div>
         </div>
 
-        <div className="bg-white rounded-2xl shadow-lg shadow-slate-200 p-6 my-6 border border-slate-200">
+        <div className="bg-white rounded-2xl shadow-lg shadow-slate-200 p-6 my-10 border border-slate-200">
           <h3 className="text-lg font-semibold text-slate-800 mb-4">
             Question Navigator
           </h3>
@@ -424,11 +425,11 @@ const Quiz: React.FC = () => {
               ))}
             </div>
 
-            <div className="flex justify-center mt-8">
+            <div className="flex justify-center mt-8 font-serif transition-all duration-300 transform hover:scale-105">
               <button
                 onClick={handleNextQuestion}
                 disabled={!selectedOption}
-                className={`px-8 py-4 mt-8 rounded-xl font-semibold ${
+                className={`px-8 py-4 mt-6 rounded-xl font-semibold ${
                   selectedOption
                     ? "bg-gradient-to-t font-serif from-lime-400 to-yellow-300 hover:from-lime-500 hover:to-yellow-300 text-cyan-900 md:text-2xl sm:text-xl text-lg hover:shadow-lg hover:shadow-lime-200"
                     : "bg-slate-200 text-slate-400 cursor-not-allowed"
@@ -441,8 +442,6 @@ const Quiz: React.FC = () => {
             </div>
           </div>
         </div>
-
-        {/* Question Navigator */}
       </div>
     </div>
   );
